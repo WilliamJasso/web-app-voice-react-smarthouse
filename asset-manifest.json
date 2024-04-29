@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/web-app-voice-react-smarthouse/static/css/main.f5624d30.css",
+    "main.js": "/web-app-voice-react-smarthouse/static/js/main.eb156d34.js",
+    "static/js/453.c5b00be4.chunk.js": "/web-app-voice-react-smarthouse/static/js/453.c5b00be4.chunk.js",
+    "static/media/camara-icon-.png": "/web-app-voice-react-smarthouse/static/media/camara-icon-.d378a778a4b1b0a7c6eb.png",
+    "static/media/ventilador-icon.png": "/web-app-voice-react-smarthouse/static/media/ventilador-icon.5c2568f1177a30c26200.png",
+    "static/media/foco-encendido.png": "/web-app-voice-react-smarthouse/static/media/foco-encendido.7a643358ab311d92cbc0.png",
+    "static/media/cortina.png": "/web-app-voice-react-smarthouse/static/media/cortina.2e68e0357de407a289d8.png",
+    "index.html": "/web-app-voice-react-smarthouse/index.html",
+    "main.f5624d30.css.map": "/web-app-voice-react-smarthouse/static/css/main.f5624d30.css.map",
+    "main.eb156d34.js.map": "/web-app-voice-react-smarthouse/static/js/main.eb156d34.js.map",
+    "453.c5b00be4.chunk.js.map": "/web-app-voice-react-smarthouse/static/js/453.c5b00be4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f5624d30.css",
+    "static/js/main.eb156d34.js"
+  ]
+}
