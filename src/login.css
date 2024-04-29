@@ -1,0 +1,37 @@
+.login {
+    background-color: #282c34;
+    color: white;
+    font-size: calc(10px + 2vmin);
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw; /* Establecer el ancho al 100% del viewport */
+    height: 90vh; /* Establecer la altura al 100% del viewport */
+    margin: 0; 
+    padding: 0; 
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+ 
+
+.microphone-button {
+    padding: 15px;
+    border-radius: 20px;
+    border: 0;
+    color: hsl(0, 0%, 100%);
+    background-color:#282c34;
+    box-shadow: rgb(255, 255, 255) 0 0 8px;
+    letter-spacing: 1.5px;
+    transition: all 0.5s ease;
+    margin: 30px;
+}
+
+
+.microphone-button:hover {
+    background-color: hsl(212, 92%, 56%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(7, 114, 246) 0px 7px 29px 0px;
+}

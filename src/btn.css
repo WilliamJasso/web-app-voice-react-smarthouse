@@ -1,0 +1,30 @@
+.Btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 0;
+  background-color: #282c34;
+  box-shadow: rgb(255, 255, 255) 0 0 8px;
+  transition: all 0.5s ease;
+  display: flex; /* Utilizar flexbox para centrar el contenido */
+  justify-content: center;
+  align-items: center;
+}
+
+.Btn:hover {
+  background-color: hsl(212, 92%, 56%);
+  box-shadow: rgb(7, 114, 246) 0px 7px 29px 0px;
+}
+
+#voiceBtn.Btn.active {
+  background-color: hsl(212, 92%, 56%);
+  box-shadow: rgb(24, 112, 220) 0px 7px 29px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
+}
+
+.Btn img {
+  width: 30px;
+  height: 30px;
+}

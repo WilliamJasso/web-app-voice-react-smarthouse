@@ -1,0 +1,103 @@
+.tooltip-container {
+  --bubble-size: 12px;
+  position: absolute;
+  bottom: 30px;
+  right: 40px;
+  width: auto;
+  height: auto;
+  background: #282c34;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 17px;
+  padding: 0.7em 1.8em;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 8px 0 rgb(255, 255, 255);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tooltip {
+  position: absolute;
+  width: fit-content;
+  top: -50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-90%);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: all 0.5s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-radius: var(--bubble-size);
+  background: #282c34;
+  box-shadow: rgb(244, 244, 244) 0px 0px 20px 0px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  font-style: normal;
+  justify-content: center;
+  align-items: center;
+}
+.tooltip-title {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.tooltip-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+}
+
+.Logo {
+  display: flex;
+  margin-bottom: 3px;
+  justify-content: center;
+  align-items: center;
+}
+
+.Logo img {
+  height: 40px;
+}
+
+.tooltip::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%);
+  border-style: solid;
+  border-width: 8px 8px 0;
+  border-color: #282c34 transparent transparent;
+}
+
+.tooltip-container:hover {
+  background-color: hsl(212, 92%, 56%);
+  color: white;
+  box-shadow: 0 0 20px (white);
+}
+
+.tooltip-container:hover .tooltip {
+  top: -120%;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
