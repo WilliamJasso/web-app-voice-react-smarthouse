@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import moment from "moment"; // Importa moment
 import "./App.css";
 import Header from "./header";
 import Loader from "./loader";
@@ -46,16 +47,15 @@ function App() {
       setRecognizedText(transcript);
       setTextRecognized(true); // Establecer el estado textRecognized a true cuando se reconoce el texto
 
-      // Obtener la fecha y hora actual
-      const currentDate = new Date();
-      const formattedDate = currentDate.toISOString();
+      // Obtener la fecha y hora actual y formatearla con moment
+      const formattedDate = moment().format("YYYY-MM-DD H:m:s");
 
       // Hacer una solicitud POST con AXIOS para almacenar la orden en la API
       axios
         .post("https://660b579accda4cbc75dcaf79.mockapi.io/Orders", {
           order: transcript,
-          user: "Admin", // Reemplaza "usuario" con el nombre de usuario real
           dateTime: formattedDate,
+          user: "Admin", 
         })
         .then(function (response) {
           console.log("Orden almacenada con éxito:", response.data);
